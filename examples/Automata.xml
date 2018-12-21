@@ -1,0 +1,18 @@
+﻿<StateMachineDescription>
+  <States>
+    <Item Name="Stopped" Position_0="-0.8822526, -0.5102389" Id="1" />
+    <Item Name="Playing" Position_0="0.9317404, -0.5102388" Id="2" />
+    <Item Name="Paused" Position_0="0.006825984, 0.5426621" Id="3" />
+    <Item Name="Lala" Position_0="-1.188567, 0.5853242" Id="4" />
+  </States>
+  <Transitions>
+    <Item Name="Play" From="1" To="2" />
+    <Item Name="Pause" From="2" To="3" />
+    <Item Name="Stop" From="3" To="1" />
+    <Item Name="Stop" From="2" To="1" />
+    <Item Name="Play" From="3" To="2" />
+    <Item Name="Aktion" From="1" To="4" />
+    <Item Name="Aktion" From="2" To="4" />
+    <Item Name="Stop" From="4" To="1" />
+  </Transitions>
+</StateMachineDescription>
